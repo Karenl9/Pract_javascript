@@ -11,18 +11,18 @@ let intentos = 0;
 while (true) {
 let numero = parseInt(prompt("Adivina el número: "));
 if (numero == 0) {
-    console.log("GAME OVER");
+    alert("GAME OVER");
     break;
 }
 intentos++;
 
 if (numero == numeroAleatorio) {
-    console.log(`Obtenido en ${intentos} intentos.`);
+    alert(`Obtenido en ${intentos} intentos.`);
     break;
 } else if (numero < numeroAleatorio) {
-    console.log("Mayor.");
+    alert("Mayor.");
 } else {
-    console.log("Menor.");
+    alert("Menor.");
 }
 }}
 
